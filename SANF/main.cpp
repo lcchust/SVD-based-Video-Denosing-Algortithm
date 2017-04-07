@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "TypeDef.h"
 #include "SANF.h"
 #include <time.h>
