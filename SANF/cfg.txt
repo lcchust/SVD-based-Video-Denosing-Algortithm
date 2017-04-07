@@ -1,0 +1,11 @@
+OrigFilePath	= \\10.13.74.221\FinalCfPVersionSequence\D\BlowingBubbles_416x240_50.yuv
+RecFilePath	= \\10.13.74.221\hmÎ´ÂË²¨\D\LD\rec\lowdelay_P_main_BlowingBubbles_37.yuv
+FilterFilePath	= ./Filtered/filtered_BlowingBubbles_37.yuv
+ImageWidth	= 64
+ImageHeight	= 64
+FrameNum	= 5
+Threshold	= 5.6
+TemplateWindowSize	= 8
+SearchWindowSize	= 20
+NumberPatches	= 60
+SlidingDis	= 4

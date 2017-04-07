@@ -1,0 +1,23 @@
+#include #include <Eigen/SVD>
+using namespace Eigen;
+	MatrixXd A = MatrixXd::Random(5, 2);		
+	JacobiSVD<MatrixXd> svd(A, ComputeThinU | ComputeThinV);
+	MatrixXd U = svd.matrixU();
+	VectorXd singular = svd.singularValues();
+	MatrixXd V = svd.matrixV();
+	singular[1] = 0;
+	cout << "U¾ØÕó£º" << U << endl;
+	cout <<"ÌØÕ÷Öµ£º"<<singular<<endl;
+	cout<<"V¾ØÕó£º"<<V<<endl;
+	MatrixXd Sigma = singular.asDiagonal();
+	cout<<"¶Ô½ÇÕó"<<Sigma<<endl;
+
+// 		MatrixXd C;
+// 		C.setRandom(5,2);
+// 		cout << "C¾ØÕó:" << C << endl;
+// 		JacobiSVD<MatrixXd> svd( C, ComputeThinU | ComputeThinV);
+// 		MatrixXd U = svd.matrixU();
+// 		cout<<"U¾ØÕó:" <<U <<endl;
+// 		MatrixXd Cp = svd.matrixU() * svd.singularValues().asDiagonal() * svd.matrixV().transpose();
+// 		MatrixXd diff = Cp - C;
+// 		cout << "diff:\n" << diff.array().abs().sum() << "\n";

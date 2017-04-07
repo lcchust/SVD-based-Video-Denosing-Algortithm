@@ -1,0 +1,11 @@
+OrigFilePath	= E:\documents\documents\Research\HM16.0\bin\rec.yuv
+RecFilePath	= E:\documents\documents\Research\HM16.0\bin\rec37.yuv
+FilterFilePath	= ./Filtered/filtered_BlowingBubbles_37.yuv
+ImageWidth	= 64
+ImageHeight	= 64
+FrameNum	= 5
+Threshold	= 5.6
+TemplateWindowSize	= 8
+SearchWindowSize	= 20
+NumberPatches	= 60
+SlidingDis	= 4
